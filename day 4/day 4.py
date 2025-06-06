@@ -1,6 +1,7 @@
 import numpy as np
 #take in four lines of text to search for the four different arrangements of xmas
 
+#horizontal
 def type1(block):
     count=0
     for line in block:
@@ -28,6 +29,10 @@ def type4(x):
     shifted_block = [('.' * i) + block[i].strip('\n') + ('.' * (4-i)) for i in range(4)]
     return type2(shifted_block)
 
+
+
+#part 1
+
 with open('input.txt','r') as file:
     contents=file.readlines()
     count = 0
@@ -47,10 +52,13 @@ with open('input.txt','r') as file:
             valid=False
     print(count)
 
+
+
+#part 2
+
 #take a block of three lines, search for 'mas' or 'sam'
 #return a list of indices
 #check where they align
-
 def search_diag(shifted):
     x = [list(j.strip('\n')) for j in shifted]
     y = [''.join(j) for j in np.transpose(x)]

@@ -30,6 +30,8 @@ with open('input.txt', 'r') as f:
     print(count)
 
 
+#comment out line 23 for part 1 solution
+
 #8401132154762
 
 #95297119227552

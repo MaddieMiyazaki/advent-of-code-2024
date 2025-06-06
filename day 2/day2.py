@@ -1,30 +1,3 @@
-# with open('input.txt') as file:
-#     contents=file.readlines()
-#     count=0
-#     for i in contents:
-#         list_form=list(map(int, i.split()))
-#         diff=list_form[1]-list_form[0]
-#         #print(diff)
-#         if diff not in [1,2,3,-1,-2,-3]:
-#             continue
-#         else:
-#             for j in range(1,len(list_form)-1):
-#                 next_diff=list_form[j+1]-list_form[j]
-#                 #print(next_diff)
-#                 #print('check change:', next_diff in [1,2,3,-1,-2,-3] and next_diff*diff>0)
-#                 if next_diff in [1,2,3,-1,-2,-3] and next_diff*diff>0:
-#                     #print('made it past checkpoint')
-#                     pass
-#                     if j==len(list_form)-2:
-#                         count+=1
-#                         #print('made it to end of line')
-#                 else:
-#                     break
-#                 diff=next_diff
-#         #print('next line')
-#     print(count)
-
-
 #takes in list of differences. If all same sign and in 1,2,3 then return true
 def check_list(x:list):
     valid=True

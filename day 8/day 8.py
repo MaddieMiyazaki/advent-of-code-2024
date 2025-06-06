@@ -34,9 +34,9 @@ with open('input.txt', 'r') as f:
                     b = info[letter][i][1] - info[letter][j][1]
 
 
-                    #part 1
-                    #(1, 8) (2, 5) gives (0,11) (3,2)
-
+                    # # part 1
+                    # # (1, 8) (2, 5) gives (0,11) (3,2)
+                    #
                     # anti1=(info[letter][i][0]+a,info[letter][i][1]+b)
                     # anti2=(info[letter][j][0]-a,info[letter][j][1]-b)
                     #
@@ -67,3 +67,5 @@ with open('input.txt', 'r') as f:
 # A: 3 antennas (3!=6 antinodes but 1 out of range) 5
 # O: 4 antennas (4!=12 antinodes but 2 out of range) 10
 # 1 overlap (5+10-1)=14
+
+# comment out accordingly for part 1 and 2 solutions
