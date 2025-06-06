@@ -1,3 +1,4 @@
+#part 1
 with open('input.txt') as file:
     contents=file.readlines()
     a,b=[],[]
@@ -11,7 +12,7 @@ with open('input.txt') as file:
 print(s)
 
 
-
+#part 2
 with open('input.txt') as file:
     contents=file.readlines()
     a,b=[],[]
